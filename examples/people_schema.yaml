@@ -1,0 +1,17 @@
+type: people
+fields:
+  - name: person_id
+    type: uuid
+  - name: name
+    type: name
+  - name: email
+    type: email
+  - name: phone
+    type: phone_number
+  - name: age
+    type: int
+    min: 18
+    max: 90
+  - name: registered_at
+    type: datetime
+    start: "-3y"

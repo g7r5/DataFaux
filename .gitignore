@@ -1,0 +1,52 @@
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+
+# Python caches
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.pkl
+*.pklz
+*.pickle
+
+# Temporary files
+*.log
+*.tmp
+*.temp
+*.swp
+*.swo
+*.bak
+*.old
+
+# pytest cache
+.pytest_cache/
+
+# Coverage files
+.coverage
+htmlcov/
+coverage.xml
+*.cover
+*.py,cover
+
+# Notebook cache
+.ipynb_checkpoints/
+
+# Build files
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# IDE configuration
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Other
+.DS_Store
+Thumbs.db

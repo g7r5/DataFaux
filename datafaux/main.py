@@ -1,7 +1,4 @@
-# Punto de entrada CLI para DataFaux
-
-def main():
-    pass
+from .cli import main
 
 if __name__ == "__main__":
     main()

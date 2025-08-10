@@ -1,0 +1,18 @@
+type: ecommerce
+# for now generate_from_schema uses generate_default; in future versions you will be able to define fields
+fields:
+  - name: order_id
+    type: uuid
+  - name: customer_id
+    type: uuid
+  - name: order_date
+    type: datetime
+  - name: total
+    type: float
+  - name: currency
+    type: enum
+    values: ["EUR","USD","ARS"]
+  - name: items
+    type: array
+    item:
+      type: object

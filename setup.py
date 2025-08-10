@@ -1,19 +1,22 @@
 from setuptools import setup, find_packages
 
 setup(
-    name='datafaux',
-    version='0.1.0',
-    description='Generador de datos ficticios para pruebas y desarrollo',
-    author='Jean-EstevezT',
+    name="datafaux",
+    version="0.1.0",
+    description="DataFaux - Test dataset generator (restructured)",
     packages=find_packages(),
     install_requires=[
-        'faker',
-        'pandas',
-        'openpyxl',
+        "faker>=19.0.0",
+        "pandas>=2.0.0",
+        "pyyaml",
+        "click",
+        "openpyxl",
+        "pyarrow",
+        "fastparquet",
     ],
     entry_points={
-        'console_scripts': [
-            'datafaux=datafaux.main:main',
-        ],
+        "console_scripts": [
+            "datafaux=datafaux.cli:main"
+        ]
     },
 )
