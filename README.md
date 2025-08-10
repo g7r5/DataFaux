@@ -1,2 +1,2 @@
 # DataFaux
-A configurable test dataset generator that creates synthetic data with a realistic structure (CSV/JSON/SQL/Parquet) for devs and testers. It allows for integration into CI pipelines, creating test loads, and populating local environments without exposing real data
+Open source Python script and library that generates realistic and structured test datasets for developers, testers, and QA teams, simulating real data from different sectors (finance, healthcare, e-commerce, logistics, education, etc.), without legal risk (compliant with GDPR, HIPAA, etc.).
