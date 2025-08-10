@@ -25,7 +25,7 @@ def inject_errors(df: pd.DataFrame, error_rate: float = 0.05) -> pd.DataFrame:
         if kind == "empty":
             df.at[idx, col] = None
         elif kind == "wrong_type":
-            df.at[idx, col] = {"__invalid__": True}
+            df.at[idx, col] = "WRONG_TYPE_INJECTED"
         elif kind == "outlier":
             try:
                 if pd.api.types.is_numeric_dtype(df[col]):
