@@ -1,0 +1,1 @@
+# Funciones wrapper de Faker

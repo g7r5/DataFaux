@@ -1,0 +1,8 @@
+faker
+pandas
+openpyxl
+click
+pyyaml
+pytest
+mkdocs
+sphinx
