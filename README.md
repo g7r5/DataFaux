@@ -1,6 +1,6 @@
 # DataFaux
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://github.com/jeanestevez/DataFaux/blob/main/LICENSE.md)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://github.com/Jean-EstevezT/DataFaux/blob/main/LICENSE.md)
 
 **DataFaux** is a powerful, open-source Python tool for generating realistic and structured test data. It is designed for developers, testers, and QA engineers who need to create varied and valid datasets for testing and development without using sensitive real-world information.
 
