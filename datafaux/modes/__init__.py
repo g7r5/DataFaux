@@ -6,7 +6,6 @@ This package contains different execution modes for DataFaux:
 - streaming: Mode for streaming data generation
 """
 
-from .testers import TestersMode
 from .streaming import StreamingMode
 
-__all__ = ['TestersMode', 'StreamingMode']
+__all__ = ['StreamingMode']
