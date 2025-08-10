@@ -10,12 +10,22 @@ def generate_stream(generator_func: Callable, out_path: str, *, count: int = 100
     Generates data in streaming mode by calling `generator_func` which must accept (count, chunksize, **kwargs)
     and be iterable (yield DataFrame chunks).
     """
+    import math
+    try:
+        from tqdm import tqdm
+        use_tqdm = True
+    except ImportError:
+        use_tqdm = False
+
+    total_chunks = math.ceil(count / chunksize)
+    iterator = generator_func(count=count, chunksize=chunksize, **kwargs)
+    if use_tqdm:
+        iterator = tqdm(iterator, total=total_chunks, desc="Generating chunks")
     first_chunk = True
-    for chunk in generator_func(count=count, chunksize=chunksize, **kwargs):
+    for chunk in iterator:
         if fmt == "csv":
             chunk.to_csv(out_path, mode="a", header=first_chunk, index=False, encoding="utf-8")
         elif fmt == "json":
-            # newline-delimited JSON
             chunk.to_json(out_path, orient="records", lines=True, force_ascii=False, mode="a")
         else:
             raise ValueError(f"Streaming not supported for format {fmt}")
