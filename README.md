@@ -32,9 +32,19 @@ python -m datafaux.main generate --preset people --count 100 --out people.csv
 
 ## Installation
 
+### From PyPI (Recommended)
+
+Install DataFaux directly from PyPI:
+
+```bash
+pip install datafaux
+```
+
+### From Source
+
 1.  **Clone the repository:**
     ```bash
-    git clone https://github.com/jeanestevez/DataFaux.git
+    git clone https://github.com/Jean-EstevezT/DataFaux.git
     cd DataFaux
     ```
 
@@ -50,7 +60,7 @@ python -m datafaux.main generate --preset people --count 100 --out people.csv
     source .venv/bin/activate
     ```
 
-3.  **Install the dependencies:**
+3.  **Install the package:**
     ```bash
     pip install -r requirements.txt
     ```
